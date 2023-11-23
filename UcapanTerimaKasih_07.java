@@ -15,10 +15,16 @@ public class UcapanTerimaKasih_07 {
     public static void UcapanTerimakasih(){
 
         String nama = PenerimaUcapan();
-        System.out.println("Thank you"+nama+"for being the best teacher in the world.\n"+"You inspired in me a love for learning and made me feel like I could ask you anything");
+        System.out.println("Jangan lupa untuk tetap tersenyum " +nama+ "\nKarena senyum sebagian iman");
     }
 
+    public static void UcapanTambahan(String Ucapan){
+
+        System.out.println(Ucapan);
+    }
     public static void main(String[] args){
         UcapanTerimakasih();
+        String khusus = "Semoga kamu besok bisa ketemu jemin";
+        UcapanTambahan(khusus);
     }
 }
