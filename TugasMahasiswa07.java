@@ -22,7 +22,7 @@ public class TugasMahasiswa07 {
             System.out.print("Masukan Nama Mahasiswa " + (i + 1) + ": ");
             namaMahasiswa[i] = scan.next();
             for(int j = 0; j < jmlTugas; j++){
-                System.out.print("Nilai Tugas Minggu ke-" + (j + 1) + " : ");
+                System.out.print("Nilai Tugas " + namaMahasiswa[i] + " Minggu ke-" + (j + 1) + " : ");
                 nilaiMahasiswa[i][j] = scan.nextInt();
             }
         }
@@ -31,7 +31,7 @@ public class TugasMahasiswa07 {
 
     static void daftarNilai() {
         for (int i = 0; i < jmlMahasiswa; i++) {
-            System.out.print(namaMahasiswa[i] + ": ");
+            System.out.print("Total Nilai Tugas Milik " + namaMahasiswa[i] + ": ");
             for (int j = 0; j< jmlTugas; j++) {
                 System.out.print(nilaiMahasiswa[i][j] + " ");
             }
